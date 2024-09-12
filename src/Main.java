@@ -16,7 +16,7 @@ public class Main {
         System.out.println("-             4. Tipo de Operadores               -");
         System.out.println("-             5. Condicional IF,ELSE IF,ELSE      -");
         System.out.println("-             6. Condicional SWICTH               -");
-        System.out.println("-             7. Condicional Ternaria             -");
+        System.out.println("-             7. Condicionales Ternarias          -");
         System.out.println("-             8. Bucle DO WHILE                   -");
         System.out.println("-             9. Bucle WHILE                      -");
         System.out.println("-             10.Bucle FOR                        -");
@@ -34,7 +34,7 @@ public class Main {
         switch (opciones) {
             case 1:
                 System.out.println("___________________________________________________");
-                System.out.println("-       Que son los Datos Primitivos              -");
+                System.out.println("-       1. Que son los Datos Primitivos           -");
                 System.out.println("___________________________________________________");
                 System.out.println("- Los tipos primitivos en Java incluyen           -");
                 System.out.println("- tipos de datos enteros, de punto flotante,      -");
@@ -51,7 +51,7 @@ public class Main {
             case 2:
 
                 System.out.println("__________________________________________________");
-                System.out.println("-                Que son los String              -");
+                System.out.println("-             2.Que son los String               -");
                 System.out.println("__________________________________________________");
                 System.out.println("-Son un objeto que nos permiten almecenar muchos -");
                 System.out.println("-caracteres                                      -");
@@ -69,7 +69,7 @@ public class Main {
 
             case 3:
                 System.out.println("___________________________________________________");
-                System.out.println("-            Que son las constantes               -");
+                System.out.println("-           3.Que son las constantes              -");
                 System.out.println("___________________________________________________");
                 System.out.println("- Es un valor que no cambia durante la ejecución  -");
                 System.out.println("- del programa, se utilizan para representar      -");
@@ -88,7 +88,7 @@ public class Main {
 
             case 4:
                 System.out.println("___________________________________________________");
-                System.out.println("-              Tipos de Operadores                -");
+                System.out.println("-           4. Tipos de Operadores                -");
                 System.out.println("___________________________________________________");
                 System.out.println("-  1. Aritméticos                                 -");
                 System.out.println("-  2. Relacionales                                -");
@@ -217,11 +217,11 @@ public class Main {
                     scanner.nextLine(); // Espera a que el usuario presione Enter
                     break;
                 }
-                
+
             case 5:
 
                 System.out.println("___________________________________________________");
-                System.out.println("-         Condicional IF,ELSE IF,ELSE             -");
+                System.out.println("-        5.Condicional IF,ELSE IF,ELSE            -");
                 System.out.println("___________________________________________________");
                 System.out.println("-  1. IF                                          -");
                 System.out.println("-  2. ElSE IF                                     -");
@@ -289,17 +289,103 @@ public class Main {
                 }
 
             case 6:
-                System.out.println("7. Condicional Ternaria");
+
+                System.out.println("___________________________________________________");
+                System.out.println("-            6. Condicional SWICTH                -");
+                System.out.println("___________________________________________________");
+                System.out.println("- permite definir casos específicos a realizar    -");
+                System.out.println("- cuando la variable expuesta como condición sea  -");
+                System.out.println("- igual a los valores que se especifican mediante -");
+                System.out.println("- cada case                                       -");
+                System.out.println("___________________________________________________");
+                System.out.println("_                    Ejemplo                      _");
+                System.out.println("___________________________________________________");
+
+                System.out.println("Presione enter para volver al menú ................");
+
+                scanner.nextLine(); // Captura el salto de línea restante
+                scanner.nextLine(); // Espera a que el usuario presione Enter
                 break;
+
+
             case 7:
-                System.out.println("8. Bucle DO While");
+
+                System.out.println("___________________________________________________");
+                System.out.println("-         7. Condicionales Ternarias              -");
+                System.out.println("___________________________________________________");
+                System.out.println("- Es una herramienta esencial que permite evaluar -");
+                System.out.println("- una expresión condicional de manera concisa y   -");
+                System.out.println("- efectiva, esta función se compone de tres partes-");
+                System.out.println("- fundamentales: una condición a evaluar, un valor-");
+                System.out.println("- a retornar en caso de que la condición  sea     -");
+                System.out.println("- verdadera y un valor a retornar en caso de que  -");
+                System.out.println("- la condición sea falsa                          -");
+                System.out.println("___________________________________________________");
+                System.out.println("_                    Ejemplo                      _");
+                System.out.println("___________________________________________________");
+
+                System.out.println("Presione enter para volver al menú ................");
+
+                scanner.nextLine(); // Captura el salto de línea restante
+                scanner.nextLine(); // Espera a que el usuario presione Enter
                 break;
+
             case 8:
-                System.out.println("9. Bucle While");
+
+                System.out.println("____________________________________________________");
+                System.out.println("-              8. Bucle DO WHILE                   -");
+                System.out.println("____________________________________________________");
+                System.out.println("- Es una estructura de control que repite un bloque-");
+                System.out.println("- de código al menos una vez,y luego verifica una  -");
+                System.out.println("- condición para decidir si continuar o salir del  -");
+                System.out.println("- bucle.                                           -");
+                System.out.println("____________________________________________________");
+                System.out.println("_                    Ejemplo                       _");
+                System.out.println("____________________________________________________");
+
+                System.out.println("Presione enter para volver al menú ................");
+
+                scanner.nextLine(); // Captura el salto de línea restante
+                scanner.nextLine(); // Espera a que el usuario presione Enter
                 break;
+
             case 9:
-                System.out.println("10. Bucle FOR");
+
+                System.out.println("____________________________________________________");
+                System.out.println("-              9. Bucle WHILE                      -");
+                System.out.println("____________________________________________________");
+                System.out.println("- Es una estructura de control que repite un bloque-");
+                System.out.println("- de código mientras una condición se evalúe como  -");
+                System.out.println("- verdadera.                                       -");
+                System.out.println("____________________________________________________");
+                System.out.println("_                    Ejemplo                       _");
+                System.out.println("____________________________________________________");
+
+                System.out.println("Presione enter para volver al menú ................");
+
+                scanner.nextLine(); // Captura el salto de línea restante
+                scanner.nextLine(); // Espera a que el usuario presione Enter
                 break;
+
+            case 10:
+
+                System.out.println("____________________________________________________");
+                System.out.println("-              10. Bucle FOR                       -");
+                System.out.println("____________________________________________________");
+                System.out.println("- Es una estructura de control que permite repetir -");
+                System.out.println("- un bloque de código un número específico de veces-");
+                System.out.println("- Es una de las estructuras de control más         -");
+                System.out.println("- utilizadas y frecuentes..                        -");
+                System.out.println("____________________________________________________");
+                System.out.println("_                    Ejemplo                       _");
+                System.out.println("____________________________________________________");
+
+                System.out.println("Presione enter para volver al menú ................");
+
+                scanner.nextLine(); // Captura el salto de línea restante
+                scanner.nextLine(); // Espera a que el usuario presione Enter
+                break;
+
             default:
                 System.out.println("0. Salir");
                 break;
