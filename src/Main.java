@@ -40,11 +40,167 @@ public class Main {
                 System.out.println("- tipos de datos enteros, de punto flotante,      -");
                 System.out.println("- booleanos y de caracteres, y están diseñados    -");
                 System.out.println("- para contener valores básicos sin ningún método -");
-                System.out.println("- o  comportamiento asociado con ellos            -");
+                System.out.println("- o  comportamiento asociado con ellos:           -");
+                System.out.println("-                                                 -");
+                System.out.println("-                  1. Byte                        -");
+                System.out.println("-                  2. Short                       -");
+                System.out.println("-                  3. Int                         -");
+                System.out.println("-                  4. long                        -");
+                System.out.println("-                  5. Float                       -");
+                System.out.println("-                  6. Bouble                      -");
+                System.out.println("-                  7. Char                        -");
+                System.out.println("-                  8. Boolean                     -");
+                System.out.println("-                  0. Salir                       -");
                 System.out.println("___________________________________________________");
-                System.out.println("Presione Enter para continuar......................");
+                //////////  ///
+                System.out.println("Ingrese una opción");
+                int JEN1 = scannerJeni.nextInt();
 
-                scanner.nextLine(); // Captura el salto de línea restante
+                if (JEN1 == 1) {
+
+                    System.out.println("___________________________________________________");
+                    System.out.println("-                  1. Byte:                       -");
+                    System.out.println("-                                                 -");
+                    System.out.println("-   Utilizado para datos pequeños y optimización  -");
+                    System.out.println("-   de memoria en arrays grandes                  -");
+                    System.out.println("-                                                 -");
+                    System.out.println("-   Ejemplo:     'byte edad = 56;'                -");
+                    System.out.println("-                                                 -");
+                    System.out.println("___________________________________________________");
+                    System.out.println("Presione enter para volver al menú.................");
+
+                    scanner.nextLine(); // Captura el salto de línea restante
+                    scanner.nextLine(); // Espera a que el usuario presione Enter
+                    break;
+                }
+
+                if (JEN1 == 2) {
+
+                    System.out.println("___________________________________________________");
+                    System.out.println("-                  2. Short:                      -");
+                    System.out.println("-                                                 -");
+                    System.out.println("- Útil para datos numéricos más grandes que byte  -");
+                    System.out.println("- pero aún mas pequeños.                          -");
+                    System.out.println("-                                                 -");
+                    System.out.println("-   Ejemplo:       'short año = 2019;'            -");
+                    System.out.println("-                                                 -");
+                    System.out.println("___________________________________________________");
+                    System.out.println("Presione enter para volver al menú.................");
+
+                    scanner.nextLine(); // Captura el salto de línea restante
+                    scanner.nextLine(); // Espera a que el usuario presione Enter
+                    break;
+
+                }
+
+                if (JEN1 == 3) {
+
+                    System.out.println("___________________________________________________");
+                    System.out.println("-                  3. Int:                        -");
+                    System.out.println("-                                                 -");
+                    System.out.println("- El tipo de dato entero más comúnmente usado     -");
+                    System.out.println("-                                                 -");
+                    System.out.println("-   Ejemplo:       'int salario = 350000;'        -");
+                    System.out.println("-                                                 -");
+                    System.out.println("___________________________________________________");
+                    System.out.println("Presione enter para volver al menú.................");
+
+                    scanner.nextLine(); // Captura el salto de línea restante
+                    scanner.nextLine(); // Espera a que el usuario presione Enter
+                    break;
+                }
+
+                if (JEN1 == 4) {
+
+                    System.out.println("___________________________________________________");
+                    System.out.println("-                  4. Long:                       -");
+                    System.out.println("-                                                 -");
+                    System.out.println("- Utilizado para valores enteros muy grandes      -");
+                    System.out.println("-                                                 -");
+                    System.out.println("-   Ejemplo:    'long distancia = 45265444444l;'  -");
+                    System.out.println("-                                                 -");
+                    System.out.println("___________________________________________________");
+                    System.out.println("Presione enter para volver al menú.................");
+
+                    scanner.nextLine(); // Captura el salto de línea restante
+                    scanner.nextLine(); // Espera a que el usuario presione Enter
+                    break;
+                }
+
+                if (JEN1 == 5) {
+
+                    System.out.println("___________________________________________________");
+                    System.out.println("-                  5. float:                      -");
+                    System.out.println("-                                                 -");
+                    System.out.println("- Números en coma flotante de precisión simple.   -");
+                    System.out.println("-                                                 -");
+                    System.out.println("-   Ejemplo:    'float precio = 45.236e;'         -");
+                    System.out.println("-                                                 -");
+                    System.out.println("___________________________________________________");
+                    System.out.println("Presione enter para volver al menú.................");
+
+                    scanner.nextLine(); // Captura el salto de línea restante
+                    scanner.nextLine(); // Espera a que el usuario presione Enter
+                    break;
+                }
+
+                if (JEN1 == 6) {
+
+                    System.out.println("___________________________________________________");
+                    System.out.println("-                  6. Double:                     -");
+                    System.out.println("-                                                 -");
+                    System.out.println("- Números en coma flotante en doble precisión     -");
+                    System.out.println("-                                                 -");
+                    System.out.println("-   Ejemplo:    'double pi = 3.1415926535;'       -");
+                    System.out.println("-                                                 -");
+                    System.out.println("___________________________________________________");
+                    System.out.println("Presione enter para volver al menú.................");
+
+                    scanner.nextLine(); // Captura el salto de línea restante
+                    scanner.nextLine(); // Espera a que el usuario presione Enter
+                    break;
+                }
+
+                if (JEN1 == 7) {
+
+                    System.out.println("___________________________________________________");
+                    System.out.println("-                  7. char:                       -");
+                    System.out.println("-                                                 -");
+                    System.out.println("- Almacena un solo carácter Unicode               -");
+                    System.out.println("-                                                 -");
+                    System.out.println("-   Ejemplo:    'char inicial ='j';'              -");
+                    System.out.println("-                                                 -");
+                    System.out.println("___________________________________________________");
+                    System.out.println("Presione enter para volver al menú.................");
+
+                    scanner.nextLine(); // Captura el salto de línea restante
+                    scanner.nextLine(); // Espera a que el usuario presione Enter
+                    break;
+                }
+
+                if (JEN1 == 8) {
+
+                    System.out.println("___________________________________________________");
+                    System.out.println("-                  8. Boolean:                    -");
+                    System.out.println("-                                                 -");
+                    System.out.println("- Almacena valores de verdad                      -");
+                    System.out.println("-                                                 -");
+                    System.out.println("-   Ejemplo:   'boolean esMayorDeEdad = true;'    -");
+                    System.out.println("-                                                 -");
+                    System.out.println("___________________________________________________");
+                    System.out.println("Presione enter para volver al menú.................");
+
+                    scanner.nextLine(); // Captura el salto de línea restante
+                    scanner.nextLine(); // Espera a que el usuario presione Enter
+                    break;
+                }
+                if (JEN1 == 0) {
+
+                    System.out.println("Salir");
+                    break;
+                }
+
+            scanner.nextLine(); // Captura el salto de línea restante
                 scanner.nextLine(); // Espera a que el usuario presione Enter
                 break;
 
@@ -57,8 +213,9 @@ public class Main {
                 System.out.println("-caracteres                                      -");
                 System.out.println("-                                                -");
                 System.out.println("-  Ejemplo:                                      -");
-                System.out.println("-    ° String mensaje = Hola Amigos              -");
+                System.out.println("-    ° String mensaje = Hola + nombre;           -");
                 System.out.println("-    ° String nombre = Camilo                    -");
+                System.out.println("-    //Resultado: mensaje= 'Hola Camilo'         -");
                 System.out.println("__________________________________________________");
 
                 System.out.println("Presione Enter para continuar......................");
@@ -79,6 +236,8 @@ public class Main {
                 System.out.println("-                                                 -");
                 System.out.println("-    Ejemplo:                                     -");
                 System.out.println("-                                                 -");
+                System.out.println("- 'Public static final int TIEMPO_ESPERA = 50;    -");
+                System.out.println("- 'Public static boolean MODO_DEPURACION = true;  -");
                 System.out.println("___________________________________________________");
                 System.out.println("Presione Enter para continuar......................");
 
@@ -95,6 +254,7 @@ public class Main {
                 System.out.println("-  3. Logicos                                     -");
                 System.out.println("-  4. Asignación                                  -");
                 System.out.println("-  5. Incremento/Decremento                       -");
+                System.out.println("-  6. Salir                                       -");
                 System.out.println("___________________________________________________");
                 //////////  ///
                 System.out.println("Ingrese una opción");
@@ -200,7 +360,6 @@ public class Main {
                     break;
                 }
 
-
                 if (JEN2 == 5) {
 
                     System.out.println("___________________________________________________________");
@@ -218,14 +377,21 @@ public class Main {
                     break;
                 }
 
+                if (JEN2 == 6) {
+
+                    System.out.println("Salir");
+                    break;
+                }
+
             case 5:
 
                 System.out.println("___________________________________________________");
                 System.out.println("-        5.Condicional IF,ELSE IF,ELSE            -");
                 System.out.println("___________________________________________________");
-                System.out.println("-  1. IF                                          -");
-                System.out.println("-  2. ElSE IF                                     -");
-                System.out.println("-  3. ELSE                                        -");
+                System.out.println("-  1. If                                          -");
+                System.out.println("-  2. Else if                                     -");
+                System.out.println("-  3. Else                                        -");
+                System.out.println("-  4. Salir                                       -");
                 System.out.println("___________________________________________________");
                 //////////  ///
                 System.out.println("Ingrese una opción");
@@ -241,7 +407,6 @@ public class Main {
                     System.out.println("___________________________________________________________");
                     System.out.println("_                    Ejemplo                              _");
                     System.out.println("___________________________________________________________");
-
 
                     System.out.println("Presione enter para volver al menú ........................");
 
@@ -285,6 +450,11 @@ public class Main {
 
                     scanner.nextLine(); // Captura el salto de línea restante
                     scanner.nextLine(); // Espera a que el usuario presione Enter
+                    break;
+                }
+                if (JEN3 == 4) {
+
+                    System.out.println("Salir");
                     break;
                 }
 
