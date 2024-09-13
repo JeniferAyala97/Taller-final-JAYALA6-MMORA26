@@ -406,8 +406,10 @@ public class Main {
                         System.out.println("___________________________________________________________");
                         System.out.println("-                       1. if:                            -");
                         System.out.println("-                                                         -");
-                        System.out.println("-  Con este se indica en el programa que se tome un       -");
-                        System.out.println("-  cambio sólo si se cumple la condición que se           -");
+                        System.out.println("-  se utiliza para evaluar una expresión condicional si   -");
+                        System.out.println("-  se cumple la condición (es verdadera)  , ejecutará un  -");
+                        System.out.println("-  bloque de código. Si es falsa, es posible ejecutar     -");
+                        System.out.println("-  otras sentencias.                                      -");
                         System.out.println("___________________________________________________________");
                         System.out.println("_                    Ejemplo                              _");
                         System.out.println("___________________________________________________________");
@@ -677,10 +679,13 @@ public class Main {
                     scanner.nextLine(); // Espera a que el usuario presione Enter
                     break;
 
+                default:
+                    System.out.println("0.salir");
+
             }
         }
         
-        while (opciones!=01) ;
+        while (opciones!= 11) ;
         System.out.println("0. Salir");
 
 
