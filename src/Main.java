@@ -408,16 +408,15 @@ public class Main {
                     System.out.println("_                    Ejemplo                              _");
                     System.out.println("___________________________________________________________");
                     Scanner numero  = new Scanner (System.in);
-                    int n,n2=0;
-                    int resultado = 0;
+                    int n,n2;
+                    int resultado;
 
-                    //si el numero n es menor o igual a 6 repite el codigo hasta que se ingrese uno mayor
-                    do{
+                    do {
                         System.out.println("Escriba un numero mayor a 6:");
                         n = numero.nextInt();
                         if(n<6){System.out.println("vuelve a intentarlo");}
                     }while(n<=6);
-//si el numero n es mayor o igual a 6 repite el codigo hasta que se ingrese uno menor
+
                     do{
                         System.out.println("Escriba un numero menor a 6:");
                         n2 = numero.nextInt();
@@ -547,11 +546,30 @@ public class Main {
                 System.out.println("_                    Ejemplo                      _");
                 System.out.println("___________________________________________________");
 
-                System.out.println("Presione enter para volver al menú ................");
+                Scanner opciones1 = new Scanner(System.in);
 
-                scanner.nextLine(); // Captura el salto de línea restante
-                scanner.nextLine(); // Espera a que el usuario presione Enter
-                break;
+                int opcion1;
+
+                System.out.println("Menu");
+                System.out.println("1-Sumar");
+                System.out.println("2-restar");
+                System.out.println("3-salir");
+
+                int JEN35 = scannerJeni.nextInt();
+                if (JEN35 == 1) {
+                        System.out.println("1.suma");
+                        break;
+                }
+
+                if (JEN35 == 2) {
+                    System.out.println("2.resta");
+                    break;
+                }
+                if (JEN35 == 3) {
+                    System.out.println("3.salir");
+                }
+                        break;
+
 
 
             case 7:
@@ -569,6 +587,12 @@ public class Main {
                 System.out.println("___________________________________________________");
                 System.out.println("_                    Ejemplo                      _");
                 System.out.println("___________________________________________________");
+                Scanner input = new Scanner(System.in);
+                System.out.println("Ingresa edad:");
+
+                byte edad = input.nextByte();
+
+                System.out.println(edad >= 18 ? "Mayor de edad." : "Menor de edad.");
 
                 System.out.println("Presione enter para volver al menú ................");
 
@@ -589,6 +613,16 @@ public class Main {
                 System.out.println("_                    Ejemplo                       _");
                 System.out.println("____________________________________________________");
 
+                Scanner opcion8 = new Scanner(System.in);
+                int numero;
+
+                do
+                {
+                    System.out.println("Ingrese un numero: ");
+                    numero = opcion8.nextInt();
+                }
+                while(numero <= 18);
+
                 System.out.println("Presione enter para volver al menú ................");
 
                 scanner.nextLine(); // Captura el salto de línea restante
@@ -606,9 +640,16 @@ public class Main {
                 System.out.println("____________________________________________________");
                 System.out.println("_                    Ejemplo                       _");
                 System.out.println("____________________________________________________");
+                int dato;
+                dato=1;
+                while (dato<=15) {
+                    System.out.print(dato);
+                    dato = dato + 1;
+                    System.out.println(" - ");
+                    dato = dato + 1;
 
+                }
                 System.out.println("Presione enter para volver al menú ................");
-
                 scanner.nextLine(); // Captura el salto de línea restante
                 scanner.nextLine(); // Espera a que el usuario presione Enter
                 break;
@@ -626,6 +667,11 @@ public class Main {
                 System.out.println("_                    Ejemplo                       _");
                 System.out.println("____________________________________________________");
 
+                for (int i = 0; i < 3; i++){
+                    int cuentac = 3 - i;
+                for (int j = 0; j < cuentac; j++)
+                    System.out.print("°");
+                System.out.println();}
                 System.out.println("Presione enter para volver al menú ................");
 
                 scanner.nextLine(); // Captura el salto de línea restante
