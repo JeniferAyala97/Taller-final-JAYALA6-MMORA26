@@ -30,7 +30,6 @@ public class Main {
         System.out.print("Seleccione un ítem :");
         int opciones = scanner.nextInt();
 
-        // Determinar la categoria usando un switch
         switch (opciones) {
             case 1:
                 System.out.println("___________________________________________________");
@@ -55,6 +54,7 @@ public class Main {
                 //////////  ///
                 System.out.println("Ingrese una opción");
                 int JEN1 = scannerJeni.nextInt();
+
 
                 if (JEN1 == 1) {
 
@@ -200,7 +200,7 @@ public class Main {
                     break;
                 }
 
-            scanner.nextLine(); // Captura el salto de línea restante
+                scanner.nextLine(); // Captura el salto de línea restante
                 scanner.nextLine(); // Espera a que el usuario presione Enter
                 break;
 
@@ -393,7 +393,7 @@ public class Main {
                 System.out.println("-  3. Else                                        -");
                 System.out.println("-  4. Salir                                       -");
                 System.out.println("___________________________________________________");
-                //////////  ///
+
                 System.out.println("Ingrese una opción");
                 int JEN3 = scannerJeni.nextInt();
 
@@ -407,6 +407,25 @@ public class Main {
                     System.out.println("___________________________________________________________");
                     System.out.println("_                    Ejemplo                              _");
                     System.out.println("___________________________________________________________");
+                    Scanner numero  = new Scanner (System.in);
+                    int n,n2=0;
+                    int resultado = 0;
+
+                    //si el numero n es menor o igual a 6 repite el codigo hasta que se ingrese uno mayor
+                    do{
+                        System.out.println("Escriba un numero mayor a 6:");
+                        n = numero.nextInt();
+                        if(n<6){System.out.println("vuelve a intentarlo");}
+                    }while(n<=6);
+//si el numero n es mayor o igual a 6 repite el codigo hasta que se ingrese uno menor
+                    do{
+                        System.out.println("Escriba un numero menor a 6:");
+                        n2 = numero.nextInt();
+                        if(n2>6){System.out.println("vuelve a intentarlo");}
+                    }while(n2>=6);
+
+                    resultado=n+n2;
+                    System.out.println(resultado);
 
                     System.out.println("Presione enter para volver al menú ........................");
 
@@ -425,7 +444,35 @@ public class Main {
                     System.out.println("___________________________________________________________");
                     System.out.println("_                    Ejemplo                              _");
                     System.out.println("___________________________________________________________");
+                    int numero1,numero2,numero3;
 
+                    Scanner entrada=new Scanner(System.in);
+                    System.out.print("Ingrese un numero: ");
+                    numero1=entrada.nextInt();
+                    System.out.print("Ingrese un numero: ");
+                    numero2=entrada.nextInt();
+                    System.out.print("Ingrese un numero: ");
+                    numero3=entrada.nextInt();
+
+
+                    if((numero1>numero2)&&(numero2>numero3)){
+                        System.out.println("El orden es: " + numero1 + numero2 +numero3);
+                    }
+                    else if((numero1>numero3)&&(numero3>numero2)){
+                        System.out.println("El orden es: " + numero1 + numero2 +numero3);
+                    }
+                    else if((numero2>numero1)&&(numero1>numero3)) {
+                        System.out.println("El orden es: " + numero2 + numero1 + numero3);
+                    }
+                    else if((numero2>numero3)&&(numero3>numero1)){
+                            System.out.println("El orden es: " + numero2 + numero3 +numero1);
+                    }
+                    else if((numero3>numero2)&&(numero2>numero1)){
+                        System.out.println("El orden es: " + numero3 + numero2 +numero1);
+                    }
+                    else {
+                        System.out.println("El orden es: " + numero3 + numero1 + numero2);
+                    }
 
                     System.out.println("Presione enter para volver al menú ........................");
 
@@ -444,9 +491,38 @@ public class Main {
                     System.out.println("___________________________________________________________");
                     System.out.println("_                    Ejemplo                              _");
                     System.out.println("___________________________________________________________");
+                    // Leer los tres valores
+                    System.out.print("Ingrese el valor para A: ");
+                    double A = scanner.nextDouble();
+                    System.out.print("Ingrese el valor para B: ");
+                    double B = scanner.nextDouble();
+                    System.out.print("Ingrese el valor para C: ");
+                    double C = scanner.nextDouble();
+
+                    if (A == B || A == C || B == C)
+                        System.out.println("Error: Los valores deben ser distintos.");
+                    else {
+                        double mayor = A;
+                        double menor = A;
+
+                        if (B > mayor) {
+                            mayor = B;
+                        }
+                        if (C > mayor) {
+                            mayor = C;
+                        }
+                        if (B < menor) {
+                            menor = B;
+                        }
+                        if (C < menor) {
+                            menor = C;
+                        }
+                        System.out.println("El valor mayor es: " + mayor);
+                        System.out.println("El valor menor es: " + menor);
+                    }
 
 
-                    System.out.println("Presione enter para volver al menú ........................");
+                        System.out.println("Presione enter para volver al menú ........................");
 
                     scanner.nextLine(); // Captura el salto de línea restante
                     scanner.nextLine(); // Espera a que el usuario presione Enter
@@ -560,5 +636,10 @@ public class Main {
                 System.out.println("0. Salir");
                 break;
 
+        }
 
-        }}}
+    }
+
+
+}
+
