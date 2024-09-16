@@ -1,3 +1,9 @@
+package ejecucion;
+
+import explicaciones.Detalle;
+import menus.MenuPrincipal;
+import menus.SubMdos;
+
 import java.util.Scanner;
 
 public class Main {
@@ -8,25 +14,10 @@ public class Main {
         do {
 
             Scanner scannerJeni = new Scanner(System.in);
-
-            System.out.println("___________________________________________________");
-            System.out.println("-          Menú taller de programacion            -");
-            System.out.println("-               Pre Hackaton                      -");
-            System.out.println("___________________________________________________");
-            System.out.println("-             1. Datos Primitivos                 -");
-            System.out.println("-             2. String                           -");
-            System.out.println("-             3. Constantes                       -");
-            System.out.println("-             4. Tipo de Operadores               -");
-            System.out.println("-             5. Condicional IF,ELSE IF,ELSE      -");
-            System.out.println("-             6. Condicional SWICTH               -");
-            System.out.println("-             7. Condicionales Ternarias          -");
-            System.out.println("-             8. Bucle DO WHILE                   -");
-            System.out.println("-             9. Bucle WHILE                      -");
-            System.out.println("-             10.Bucle FOR                        -");
-            System.out.println("-              0.Salir                            -");
-            System.out.println("___________________________________________________");
-
             Scanner scanner = new Scanner(System.in);
+
+            MenuPrincipal.menuPrincipal();
+
 
             // variables 1 2 3 4 5 6 7 8 9 10 0
 
@@ -36,60 +27,27 @@ public class Main {
             switch (opciones5) {
 
                 case 1:
-                    System.out.println("___________________________________________________");
-                    System.out.println("-       1. Que son los Datos Primitivos           -");
-                    System.out.println("___________________________________________________");
-                    System.out.println("- Los tipos primitivos en Java incluyen           -");
-                    System.out.println("- tipos de datos enteros, de punto flotante,      -");
-                    System.out.println("- booleanos y de caracteres, y están diseñados    -");
-                    System.out.println("- para contener valores básicos sin ningún método -");
-                    System.out.println("- o  comportamiento asociado con ellos:           -");
-                    System.out.println("-                                                 -");
-                    System.out.println("-                  1. Byte                        -");
-                    System.out.println("-                  2. Short                       -");
-                    System.out.println("-                  3. Int                         -");
-                    System.out.println("-                  4. long                        -");
-                    System.out.println("-                  5. Float                       -");
-                    System.out.println("-                  6. Bouble                      -");
-                    System.out.println("-                  7. Char                        -");
-                    System.out.println("-                  8. Boolean                     -");
-                    System.out.println("-                  0. Salir                       -");
-                    System.out.println("___________________________________________________");
-                    //////////  ///
+                    SubMdos.subMdos();{
+
+                }
+
                     System.out.println("Ingrese una opción");
                     int JEN1 = scannerJeni.nextInt();
 
 
                     if (JEN1 == 1) {
 
-                        System.out.println("___________________________________________________");
-                        System.out.println("-                  1. Byte:                       -");
-                        System.out.println("-                                                 -");
-                        System.out.println("-   Utilizado para datos pequeños y optimización  -");
-                        System.out.println("-   de memoria en arrays grandes                  -");
-                        System.out.println("-                                                 -");
-                        System.out.println("-   Ejemplo:     'byte edad = 56;'                -");
-                        System.out.println("-                                                 -");
-                        System.out.println("___________________________________________________");
-                        System.out.println("Presione enter para volver al menú.................");
-
+                        Detalle.detalleByte();{
+                        }
+                    }
                         scanner.nextLine(); // Captura el salto de línea restante
                         scanner.nextLine(); // Espera a que el usuario presione Enter
                         break;
-                    }
+
 
                     if (JEN1 == 2) {
 
-                        System.out.println("___________________________________________________");
-                        System.out.println("-                  2. Short:                      -");
-                        System.out.println("-                                                 -");
-                        System.out.println("- Útil para datos numéricos más grandes que byte  -");
-                        System.out.println("- pero aún mas pequeños.                          -");
-                        System.out.println("-                                                 -");
-                        System.out.println("-   Ejemplo:       'short año = 2019;'            -");
-                        System.out.println("-                                                 -");
-                        System.out.println("___________________________________________________");
-                        System.out.println("Presione enter para volver al menú.................");
+                        Detalle.detalleShort();{}
 
                         scanner.nextLine(); // Captura el salto de línea restante
                         scanner.nextLine(); // Espera a que el usuario presione Enter
