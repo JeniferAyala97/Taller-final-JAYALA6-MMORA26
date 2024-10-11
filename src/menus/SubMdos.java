@@ -2,7 +2,7 @@ package menus;
 
 public class SubMdos {
 
-    public static void subMdos () {
+    public static void subMdosDatosPrimitivos () {
 
         System.out.println("___________________________________________________");
         System.out.println("-       1. Que son los Datos Primitivos           -");
@@ -23,5 +23,36 @@ public class SubMdos {
         System.out.println("-                  8. Boolean                     -");
         System.out.println("-                  0. Salir                       -");
         System.out.println("___________________________________________________");
+    }
+
+
+
+    public static void subMdosOperadores () {
+
+       System.out.println("___________________________________________________");
+       System.out.println("-           4. Tipos de Operadores                -");
+       System.out.println("___________________________________________________");
+       System.out.println("-  1. Aritméticos                                 -");
+       System.out.println("-  2. Relacionales                                -");
+       System.out.println("-  3. Logicos                                     -");
+       System.out.println("-  4. Asignación                                  -");
+       System.out.println("-  5. Incremento/Decremento                       -");
+       System.out.println("-  6. Salir                                       -");
+       System.out.println("___________________________________________________");
+       System.out.println("Ingrese una opción");
+
+    }
+    public static void subMdosCondicionales () {
+
+        System.out.println("___________________________________________________");
+        System.out.println("-        5.Condicional IF,ELSE IF,ELSE            -");
+        System.out.println("___________________________________________________");
+        System.out.println("-  1. If                                          -");
+        System.out.println("-  2. Else if                                     -");
+        System.out.println("-  3. Else                                        -");
+        System.out.println("-  4. Salir                                       -");
+        System.out.println("___________________________________________________");
+
+        System.out.println("Ingrese una opción");
     }
 }
